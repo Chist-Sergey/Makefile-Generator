@@ -4,10 +4,10 @@ This script is written in Python 3.
 This means that you must have it installed to be able   to run it.
 
 To install Python 3 for macOS or Windows, go to  
-    https://www.python.org/downloads/release/python-3124/
+        https://www.python.org/downloads/release/python-3124/
 
 For Linux, type in console:  
-    sudo apt-get install python3.12  
+        <code>sudo apt-get install python3.12</code>  
 
 # Makefile-related  
 
@@ -24,22 +24,22 @@ https://gnuwin32.sourceforge.net/packages/make.htm
 To install Makefile for macOS, you must have eiter XCode or Brew installed.  
 
 For XCode, type in Terminal:  
-    xcode-select --install  
+        <code>xcode-select --install</code>  
 
 For Brew, type in Terminal:  
-    sudo brew install make  
+        <code>sudo brew install make</code>  
 
 ## Linux  
 
 To install Makefile for Linux, type in Terminal:  
-    sudo apt-get install build-essential  
+        <code>sudo apt-get install build-essential</code>  
 
 # Miscellaneous  
 
 ## Wget  
 
 1. Download wget for windows from  
-    https://eternallybored.org/misc/wget/ (.zip or .exe)  
+        https://eternallybored.org/misc/wget/ (.zip or .exe)  
 
 2. If you downloaded the zip, extract all files (use 7-zip).  
 3. Rename the file wget64.exe to wget.exe if necessary.  
@@ -48,11 +48,11 @@ To install Makefile for Linux, type in Terminal:
 ## cURL  
 
 To install cURL for Windows/Linux, go to  
-    https://curl.se/download.html  
+        https://curl.se/download.html  
 
 To install cURL for macOS, you must have Brew installed.  
 Type in Terminal:  
-    brew install curl  
+        <code>brew install curl</code>  
 
 # Problem not solved?  
 

@@ -14,9 +14,9 @@ Select a python version. Type it in a Terminal/Console.
 
 Add a path to a script file.  
 It might be Relative, like  
-    "Downloads/genmakefile-v1.0.py"  
+        "Downloads/genmakefile-v1.0.py"  
 Or Absolute, like   
-    "C:/Users/username/Downloads/genmakefile-v1.0.py"  
+        "C:/Users/username/Downloads/genmakefile-v1.0.py"  
 
 ## Step 4.  
 
