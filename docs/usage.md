@@ -30,4 +30,4 @@ Move the "makefile" file to the place where you want it   to use.
 
 # That's it.  
 
-See "dependencies.md" for troubleshooting.  
+See "[dependencies.md](./dependencies.md)" for troubleshooting.  

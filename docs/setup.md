@@ -28,9 +28,10 @@ cURL: curl -LJO https://raw.githubusercontent.com/Chist-Sergey/Makefile-Generato
 
 RHEL7.6: wget https://raw.githubusercontent.com/Chist-Sergey/Makefile-Generator/main/src/genmakefile-v1.0.py --output-document=genmakefile.py
 
-## Step 3 (optional). See "extra.md".  
+## Step 3 (optional).
+See "[extra.md](./extra.md)".  
 
 # This is it.  
 
-See "usage.md" next.  
+See "[usage.md](./usage.md)" next.  
 

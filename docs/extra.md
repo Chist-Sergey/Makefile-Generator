@@ -1,9 +1,9 @@
 I recommend you to add a shortcut to "make" command,  
 so you could type something simple like "m v"  
 to open your Visual Sudio Code appplication.  
-(if the file is't listed, then create it)  
 
 To do so, add an **alias m="make"** to:  
+(if the file is't listed, then create it)  
 
 macOS  
         <code>~/.bash_profile</code>  
