@@ -36,7 +36,7 @@ def generate_makefile(apps: dict[str, str]) -> None:
                         or different_shortcut == yet_another_shortcut):
                     continue
 
-                content += '{0}{1}{3}: {0} {1} {3}\n'.format(
+                content += '{0}{1}{2}: {0} {1} {2}\n'.format(
                     shortcut,
                     different_shortcut,
                     yet_another_shortcut,
