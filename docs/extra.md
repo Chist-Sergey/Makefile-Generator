@@ -6,15 +6,15 @@ To do so, add an **alias m="make"** to:
 (if the file is't listed, then create it)  
 
 macOS  
-        <code>~/.bash_profile</code>  
+        <code>\~/.bash_profile</code>  
                 or  
-        <code>~/.zsh_profile</code>  
+        <code>\~/.zsh_profile</code>  
 Windows:  
         It's complicated.  
         https://stackoverflow.com/questions/20530996/aliases-in-windows-command-prompt  
 Linux:  
-        <code>~/.bashrc</code>  
+        <code>\~/.bashrc</code>  
                 or  
-        <code>~/.zshrc</code>  
+        <code>\~/.zshrc</code>  
 Fish:  
-        <code>~/.config/fish/config.fish</code>  
+        <code>\~/.config/fish/config.fish</code>  
