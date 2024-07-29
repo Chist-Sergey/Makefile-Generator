@@ -7,14 +7,18 @@ There is a short summary of every available version:
 
 VERSION                 PROS                                CONS  
 1.0                       simple code &             limited combinations  
-                             readable result         (ex: "v", "vi")  
+                            readable result          (ex: "v", "vi")  
 
 1.1                        still simple &               lacks double   combination  
                              readable result         (ex: "v", "vig",   but not "vi")
 
-2.0                       all combinations        the result is hard   to read  
-                             are included  
+2.0                       all combinations         hard coded  
+                             are included                the result is hard to read  
                              (ex: "v", "vi", "vig")  
+
+3.0                       readable result &        exponentially slow  
+                            combinations may      by n! / (n - r)!  
+                            be exteded
 
 ## Step 2.  
 
