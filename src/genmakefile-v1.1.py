@@ -8,10 +8,14 @@
 
 def generate_makefile(apps: dict[str, str]) -> None:
     """
-    generate_makefile(apps: dict[str, str]) -> None
+    Generate text for Makefile file
+    from a dictionatry of applications.
 
-    Generate text for Makefile file from a dictionatry of applications.
-    Creates a new Makefile if Makefile is not present in a current folder.
+    Creates a new Makefile if Makefile is not present
+    in a current folder.
+
+    Raises no errors.
+    Returns nothing.
     """
     content: str = ''
 
