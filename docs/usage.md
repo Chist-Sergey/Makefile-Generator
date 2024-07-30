@@ -2,33 +2,20 @@
 
 ## Step 1.  
 
-Run a new instance of a Terminal/Console.  
+In Terminal/Console, go to the place where  
+the genmakefile script is located.  
 
 ## Step 2.  
 
-Select a python version. Type it in a Terminal/Console.  
-("python3" for macOS and Linux, or "python" for Windows)  
+Run this command in your Terminal/Console:  
 
-## Step 3.  
+    python genmakefile.py  
 
-Add a path to a script file.  
-It might be Relative, like  
+Use "python3" instead on macOS/Linux.  
 
-        "Downloads/genmakefile-v1.0.py"  
+## Step 3 (optional).  
 
-Or Absolute, like   
-
-        "C:/Users/username/Downloads/genmakefile-v1.0.py"  
-
-## Step 4.  
-
-Hit Enter and run the script.  
-
-## Step 5.  
-
-Move the "makefile" file to the place where you plan to use it.
-
-## Step 6 (optional). See "extra.md".  
+See "[extra.md](./extra.md)".  
 
 # That's it.  
 

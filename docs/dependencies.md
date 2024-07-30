@@ -17,11 +17,11 @@ This means that you must have it installed to be able to run it.
 ## Windows  
 
 To install Makefile for Windows, go to  
-https://gnuwin32.sourceforge.net/packages/make.htm  
+        https://gnuwin32.sourceforge.net/packages/make.htm  
 
 ## macOS  
 
-To install Makefile for macOS, you must have eiter XCode or Brew installed.  
+To install Makefile for macOS, you must have either XCode or Brew installed.  
 
 For XCode, type in Terminal:  
         <code>xcode-select --install</code>  
@@ -35,15 +35,6 @@ To install Makefile for Linux, type in Terminal:
         <code>sudo apt-get install build-essential</code>  
 
 # Miscellaneous  
-
-## Wget  
-
-1. Download wget for windows from  
-        https://eternallybored.org/misc/wget/ (.zip or .exe)  
-
-2. If you downloaded the zip, extract all files (use 7-zip).  
-3. Rename the file wget64.exe to wget.exe if necessary.  
-4. Move wget.exe to your Git\mingw64\bin\\.  
 
 ## cURL  
 

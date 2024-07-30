@@ -2,7 +2,7 @@ I recommend you to add a shortcut to "make" command,
 so you could type something simple like "m v"  
 to open your Visual Sudio Code appplication.  
 
-To do so, add an **alias m="make"** to:  
+To do so, add an <code>alias m="make"</code> to:  
 (if the file is't listed, then create it)  
 
 macOS  
