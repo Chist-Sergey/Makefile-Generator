@@ -30,6 +30,10 @@ def generate_makefile(
     content: str = ''
 
     '''top part of the file is where all the defenitions are located'''
+    # adding these spectial chars to alleviate
+    # the burden of writing them from the user
+    for key, value in apps.items():
+        apps[key] = key + ':\n\t@' + value
     # ex:
         # v:
         # 	open -a "Visual Studio Code"
@@ -59,14 +63,14 @@ def generate_makefile(
 
 if __name__ == '__main__':
     apps: dict[str, str] = {
-        'c': 'c:\n\t@open -a "Google Chrome"',
-        'v': 'v:\n\t@open -a "Visual Studio Code"',
-        'b': 'b:\n\t@open -a SeaLion',
-        'm': 'm:\n\t@open -a Telegram',
-        't': 't:\n\t@open -a Telegram',
-        'g': 'g:\n\t@open -a GitAhead',
-        'i': 'i:\n\t@open -a GitAhead',
+        'c': 'open -a "Google Chrome"',
+        'v': 'open -a "Visual Studio Code"',
+        'b': 'open -a SeaLion',
+        'm': 'open -a Telegram',
+        't': 'open -a Telegram',
+        'g': 'open -a GitAhead',
+        'i': 'open -a GitAhead',
     }
-    combination_length: int = 4
+    combination_length: int = 2
     generate_makefile(apps, combination_length)
     print('Makefile generated successfully. File name: makefile')
