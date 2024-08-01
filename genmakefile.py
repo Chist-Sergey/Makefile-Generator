@@ -1,10 +1,4 @@
-# v3.0
-# PROS:
-    # readable result &
-    # combinations may be exteded
-# CONS:
-    # exponentially slow
-    # by n! / (n - r)!
+# Scroll to the bottom to edit the shortcuts
 
 from itertools import permutations
 
@@ -12,7 +6,7 @@ from itertools import permutations
 def generate_makefile(
     apps: dict[str, str],
     combination_length: int
-) -> None:
+) -> str:
     """
     Generate a text for Makefile file
     from a dictionatry of applications.
@@ -25,7 +19,7 @@ def generate_makefile(
     overwrites it otherwise.
 
     Raises no errors.
-    Returns nothing.
+    Returns a string with makefile contents.
     """
     content: str = ''
 
@@ -34,7 +28,8 @@ def generate_makefile(
     # the burden of writing them from the user
     for key, value in apps.items():
         apps[key] = key + ':\n\t@' + value
-    # ex:
+
+    # example:
         # v:
         # 	open -a "Visual Studio Code"
     content += '\n'.join(apps.values()) + '\n'
@@ -43,11 +38,11 @@ def generate_makefile(
     # '- 1' is to exclude singular keys,
     # as they are already defined
     for _ in range(combination_length - 1):
-        # 'permutations' == 'all combinations, with no repeating keys'
+        # 'permutations' == 'all combinations with no repeating keys'
         for combination in permutations(apps.keys(), combination_length):
-            # ex:
-            #   vc: v c
-            #   cv: c v
+            # example:
+                # vc: v c
+                # cv: c v
             content += (
                 ''.join(combination)
                 + ':'
@@ -56,21 +51,23 @@ def generate_makefile(
             )
         combination_length -= 1
 
-    makefile = open(file='makefile', mode='w')  # w == 'overwrite'
-    makefile.write(content)
-    makefile.close()
+    return content
 
 
 if __name__ == '__main__':
-    apps: dict[str, str] = {
-        'c': 'open -a "Google Chrome"',
-        'v': 'open -a "Visual Studio Code"',
-        'b': 'open -a SeaLion',
-        'm': 'open -a Telegram',
-        't': 'open -a Telegram',
-        'g': 'open -a GitAhead',
-        'i': 'open -a GitAhead',
-    }
+    # edit here
     combination_length: int = 2
-    generate_makefile(apps, combination_length)
+    apps: dict[str, str] = {
+    # example:
+        # 'shortcut': 'application',
+        # 'c': 'open -a "Google Chrome"',
+        # 'v': 'open -a "Visual Studio Code"',
+    }
+
+    result: str = generate_makefile(apps, combination_length)
+
+    makefile = open(file='makefile', mode='w')  # w == 'overwrite'
+    makefile.write(result)
+    makefile.close()
+
     print('Makefile generated successfully. File name: makefile')

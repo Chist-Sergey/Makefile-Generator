@@ -47,4 +47,4 @@ Type in Terminal:
 
 # Problem not solved?  
 
-[Open an Issue](https://github.com/Chist-Sergey/Makefile-Generator/issues/new) on Github, I will try to solve it for you as well as update this section of documentation.  
+[Open an Issue](https://github.com/Chist-Sergey/Makefile-Generator/issues/new) on Github. I will try to solve it for you as well as update this section of documentation.  
