@@ -1,9 +1,9 @@
 I recommend you to add a shortcut to "make" command,  
-so you could type something simple like "m v"  
-to open your Visual Sudio Code appplication.  
+so you could type something simple like "m a"  
+to open your appplication.
 
 To do so, add an **alias m="make"** to:  
-(if the file is't listed, then create it)  
+(if the file is't listed, then create it)
 
 macOS  
         <code>\~/.bash_profile</code>  
@@ -17,4 +17,4 @@ Linux:
                 or  
         <code>\~/.zshrc</code>  
 Fish:  
-        <code>\~/.config/fish/config.fish</code>  
+        <code>\~/.config/fish/config.fish</code>
